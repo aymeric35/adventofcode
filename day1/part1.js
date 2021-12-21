@@ -3,7 +3,7 @@ const path = require('path');
 const source = fs.readFileSync(path.resolve(__dirname, './input.txt')).toString();
 const arrayFromSource = source.split('\n').map(number => parseInt(number, 10));
 
-function decreaseCount(array) {
+function increaseCount(array) {
     let result = 0;
     for (let i = 1; i < array.length; i++) {
         if (array[i] > array[i - 1]) {
@@ -13,7 +13,7 @@ function decreaseCount(array) {
     return result
 }
 
-decreaseCount(arrayFromSource);
+increaseCount(arrayFromSource);
 
 
 // Initialement, j'étais parti sur un forEach mais je me suis rendu compte que ce n'était pas le plus adapté.
