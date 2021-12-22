@@ -35,7 +35,7 @@ getPosition(arrayFromSource);
 // que celui-ci n'était pas vraiment optimisé à cause du nombre de boucles
 // qui sont exécutées. J'ai donc à nouveau opté pour une boucle for qui me semblait
 // plus adaptée dans ce cas précis. J'ai tout de même souhaité laisser le code que j'avais
-// précédemment écrit ici.
+// précédemment écrit ci-dessous.
 
 function alternativeMethod() {
     function filterDirection(array) {
